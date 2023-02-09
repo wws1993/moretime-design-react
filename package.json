@@ -1,10 +1,12 @@
 {
   "name": "@moretime/design-react",
+  "description": "闲暇/设计（React）",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
-    "preview": "vite preview"
+    "prepublish": "yarn build",
+    "publish": "yarn publish"
   },
   "type": "module",
   "files": ["dist"],
