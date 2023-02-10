@@ -1,7 +1,7 @@
-import demo1 from "./components/demo1"
-import demo2 from "./components/demo2"
+import ScanText from "./components/ScanText"
+import ScanningLamp from "./components/ScanningLamp"
 
 export {
-  demo1,
-  demo2
+  ScanText,
+  ScanningLamp,
 }

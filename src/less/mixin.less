@@ -1,0 +1,49 @@
+.flex(@x:center;@y:center){display:flex;justify-content:@x;align-items:@y;}
+.flex-col(@x:center;@y:center){display:flex;flex-direction:column;justify-content:@x;align-items:@y;
+  >div{width:100%;}
+}
+
+.bdr{border:1px solid #fff;}
+.bdra(@r:4px){border-radius:@r;}
+
+.abs{position:absolute;}
+.abs(@x){position:absolute;top:@x;left:@x;right:@x;bottom:@x;}
+.abs(@y;@x){position:absolute;top:@y;left:@x;right:@x;bottom:@y;}
+.abs(@t;@m;@b){position:absolute;top:@t;left:@m;right:@m;bottom:@b;}
+.abs(@t;@r;@b;@l){position:absolute;top:@t;left:@l;right:@r;bottom:@b;}
+
+.fix{position:fixed;}
+.fix(@x){position:fixed;top:@x;left:@x;right:@x;bottom:@x;}
+.fix(@y;@x){position:fixed;top:@y;left:@x;right:@x;bottom:@y;}
+.fix(@t;@m;@b){position:fixed;top:@t;left:@m;right:@m;bottom:@b;}
+.fix(@t;@r;@b;@l){position:fixed;top:@t;left:@l;right:@r;bottom:@b;}
+
+.els{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.elss(@row:2){
+  overflow: hidden;
+  display: -webkit-box;//将元素设为盒子伸缩模型显示
+  -webkit-box-orient: vertical;//伸缩方向设为垂直方向
+  -webkit-line-clamp: @row;//超出3行隐藏，并显示省略号
+}
+
+.clear{
+  &::after{content:'';display:block;clear:both;}
+}
+// 按钮文字hover
+.hover{opacity:1; transition:.3s; cursor:pointer;
+  &:hover{opacity:.8;}
+}
+// 盒子hover
+.box-hover{transition:.3s;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  &:hover{.shadow()}
+}
+// 文字边框
+.text-border{
+  text-shadow: -.42px  .42px 0 #000,
+                .42px  .42px 0 #000,
+                .42px -.42px 0 #000,
+               -.42px -.42px 0 #000;
+}
+// 阴影
+.shadow{box-shadow:-4px -1px 14px rgba(0,0,0,.23);}

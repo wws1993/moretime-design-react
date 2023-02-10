@@ -1,1 +1,0 @@
-export default ({msg}: {msg: string}) => <div>demo2 {msg}</div>
