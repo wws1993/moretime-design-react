@@ -4,14 +4,14 @@ import react from '@vitejs/plugin-react'
 
 const pathSrc = resolve(__dirname, 'src')
 
-console.log('??');
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
       '@': pathSrc,
+      '@less': resolve(__dirname, 'src/less'),
+      '@component': resolve(__dirname, 'src/component'),
     },
   },
   build: {

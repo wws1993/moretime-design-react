@@ -8,5 +8,6 @@
   },
    "include": [
     "src"
-  ] // 编译目标仅为 src 文件夹下的文件
+  ],
+  "exclude": ["src/demos.tsx"]
 }

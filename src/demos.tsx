@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './less/main.less'
 
-import ScanningLamp from './components/ScanningLamp'
-import ScanText from './components/ScanText'
+// import ScanningLamp from './components/vision/ScanningLamp'
+// import ScanText from './components/vision/ScanText'
 
 const parts = new Array(30).fill(null).map(() => String(Math.floor(Math.random() * 999999)).padStart(6, '0'))
 
