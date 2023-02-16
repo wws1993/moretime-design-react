@@ -9,20 +9,21 @@ const parts = new Array(30).fill(null).map(() => String(Math.floor(Math.random()
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <h3>文字扫描</h3>
+    {/* <h3>文字扫描</h3>
     123<ScanText style={{color: 'white', margin: '0 12px'}} color='#000'>Hello ScanText!!!</ScanText>123
     <h3>探照灯效果</h3>
-    <ScanningLamp>
-      <div className='ScanningLamp-demo'>
+    <ScanningLamp className="ScanningLamp-demo">
+      <div className='view'>
         {parts.map((item, idx) => <div
           className='item'
           key={idx}
+          onClick={() => console.log(item)}
           style={{width: `${item.slice(4)}px`, height: `${item.slice(4)}px`, background:`#${item}`}}
         ></div>)}
       </div>
 
       <p>this is a words.</p>
       <h1>this is a words.</h1>
-    </ScanningLamp>
+    </ScanningLamp> */}
   </React.StrictMode>,
 )
