@@ -10,9 +10,9 @@
   clip-path: ellipse(var(--size) var(--size) at var(--poi-left) var(--poi-top));
 }
 
-@scale:2.3;
+@scale:3;
 .clip::after{
   top:calc(var(--poi-top) - var(--size) * @scale / 2); left:calc(var(--poi-left) - var(--size) * @scale / 2);
   width:calc(var(--size) * @scale); height:calc(var(--size) * @scale); border-radius:50%;
-  background:radial-gradient(#fff0 30%, #0008);
+  background:radial-gradient(#fff0 15%, #000);
 }
