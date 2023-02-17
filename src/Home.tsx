@@ -44,7 +44,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <ViewByWelcome />,
         <ViewByScanText />,
         <ViewByScanNode />,
-        {direction: 'horizontal', node: <div className={sys.page}>test</div>}
+        <div className={sys.page}>test</div>,
       ]}
     />
   </React.StrictMode>,

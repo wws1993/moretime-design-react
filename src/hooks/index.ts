@@ -1,1 +1,1 @@
-export * as useMount from "./useMount";
+export * as useMounted from "./useMounted";

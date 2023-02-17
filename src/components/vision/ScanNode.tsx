@@ -1,9 +1,9 @@
 import classnames from 'classnames'
-import useMount from '@/hooks/useMount'
+import { useMounted } from '@/hooks'
 import sys from '@less/modules/ScanNode.module.less'
 
-export default ({children, className}: Base.props) => {
-  useMount(() => {
+export default ({ children, className }: Base.props) => {
+  useMounted(() => {
     const underlyingRef = document.querySelector(`.${sys.view}`) as HTMLDivElement
     const coverRef = document.querySelector(`.${sys.clip}`) as HTMLDivElement
 

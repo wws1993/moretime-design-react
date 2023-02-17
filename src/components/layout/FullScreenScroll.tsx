@@ -1,5 +1,6 @@
+import { useMounted } from '@/hooks';
 import sys from '@less/modules/FullScreenScroll.module.less'
-import React from 'react';
+import React, { WheelEventHandler } from 'react';
 
 interface Item {
   /** 元素滚动方向，vertical垂直，horizontal水平，默认垂直方向  */
@@ -17,11 +18,13 @@ export default ({
   showPoint = false,
   ...props
 }: IProp) => {
-  const onScroll = (ev: React.BaseSyntheticEvent) => {
-    console.log(ev);
+  const onScroll: WheelEventHandler<HTMLDivElement> = ev => {
+    // console.log(ev.);
   }
 
-  return <div {...props} onScroll={onScroll}>
+  useMounted(() => {})
+
+  return <div {...props} onWheel={onScroll}>
     {items.map((k, idx) => {
       let node: React.ReactNode
 
