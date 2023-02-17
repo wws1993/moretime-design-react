@@ -1,8 +1,8 @@
-import sys from './.module.less'
+import sys from '@less/modules/ScanText.module.less'
 
 type TProp = React.HTMLAttributes<HTMLDivElement> & {
   /** 文字 */
-  children: string;
+  children: React.ReactNode;
   /** 活跃颜色 */
   color?: string;
 }

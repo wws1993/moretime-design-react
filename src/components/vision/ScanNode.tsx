@@ -1,11 +1,8 @@
-import { useState } from 'react'
 import classnames from 'classnames'
 import useMount from '@/hooks/useMount'
-import sys from './.module.less'
+import sys from '@less/modules/ScanNode.module.less'
 
 export default ({children, className}: Base.props) => {
-  const [val, setVal] = useState(0)
-
   useMount(() => {
     const underlyingRef = document.querySelector(`.${sys.view}`) as HTMLDivElement
     const coverRef = document.querySelector(`.${sys.clip}`) as HTMLDivElement

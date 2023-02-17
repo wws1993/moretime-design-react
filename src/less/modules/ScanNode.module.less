@@ -1,11 +1,11 @@
 @import (reference) url('@less/mixin.less');
 
-.view{background:#0000}
+.view{background:#0000;}
 .container{.abs(0); overflow:hidden; position:relative;
   &::after{content:''; .abs(0); background:#0008; pointer-events:none}
 }
 .clip{.container();
-  --size:200px; --poi-top:50%; --poi-left:50%;
+  --size:200px; --poi-top:-800%; --poi-left:-800%;
   .abs(0); background-color:#fff;
   clip-path: ellipse(var(--size) var(--size) at var(--poi-left) var(--poi-top));
 }

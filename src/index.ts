@@ -1,7 +1,2 @@
-import ScanText from "./components/vision/ScanText"
-import ScanningLamp from "./components/vision/ScanningLamp"
-
-export {
-  ScanText,
-  ScanningLamp,
-}
+export * as ScanText from "./components/vision/ScanText"
+export * as ScanNode from "./components/vision/ScanNode"

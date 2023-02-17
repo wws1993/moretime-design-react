@@ -9,5 +9,5 @@
    "include": [
     "src"
   ],
-  "exclude": ["src/demos.tsx"]
+  "exclude": ["src/Home.tsx"]
 }
